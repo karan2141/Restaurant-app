@@ -1,0 +1,6 @@
+{
+  "posts": [
+    { "id": 1, "name": "Karan's-restaurant", "author": "karan" },
+    { "id": 2, "name": "Karan2's-restaurant", "author": "karan2" }
+  ]
+}
