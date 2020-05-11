@@ -1,6 +1,32 @@
 {
-  "posts": [
-    { "id": 1, "name": "Karan's-restaurant", "author": "karan" },
-    { "id": 2, "name": "Karan2's-restaurant", "author": "karan2" }
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "KFC",
+      "address": "Patiala",
+      "rating":"4.7",
+      "email":"kfc@test.com"
+    },
+    {
+      "id": 2,
+      "name": "McDonald",
+      "address": "Patiala",
+      "rating":"4.5",
+      "email":"Mcd@test.com"
+    },
+    {
+      "id": 3,
+      "name": "Taj Hotel",
+      "address": "Nabha",
+      "rating":"4.0",
+      "email":"taj@test.com"
+    },
+    {
+      "id": 4,
+      "name": "Jaggi Sweetes",
+      "address": "Patiala",
+      "rating":"4.3",
+      "email":"jaggi@test.com"
+    }
   ]
 }
