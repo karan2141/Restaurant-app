@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Table, Alert } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons'
@@ -53,7 +53,7 @@ export default class RestaurantList extends Component {
                 </tr>
               </thead>
               <tbody>
-                {this.state.list.map((item, i) => (
+                {this.state.list.map((item) => (
                   <tr>
                     <td>{item.id}</td>
                     <td>{item.name}</td>
@@ -61,7 +61,7 @@ export default class RestaurantList extends Component {
                     <td>{item.address}</td>
                     <td>{item.email}</td>
                     <td><Link to={"/update/"+item.id}><FontAwesomeIcon icon={faEdit} color="green" /> </Link>
-                    <span onClick={()=>this.delete(item.id)}><FontAwesomeIcon icon={faTrash} color="red" /> </span></td>
+                    <button onClick={()=>this.delete(item.id)}><FontAwesomeIcon icon={faTrash} color="red" /> </button></td>
                   </tr>
                 ))}
               </tbody>

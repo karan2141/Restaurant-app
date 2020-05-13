@@ -1,13 +1,6 @@
 {
   "restaurant": [
     {
-      "id": 1,
-      "name": "KFC",
-      "address": "Patiala",
-      "rating": "4.7",
-      "email": "kfc@test.com"
-    },
-    {
       "name": "McDonald",
       "address": "Patiala",
       "rating": "4.5",
@@ -22,18 +15,32 @@
       "id": 3
     },
     {
-      "name": "Harman Sweets",
-      "email": "harman@test.com",
-      "address": "kalyan",
-      "rating": "3.0",
-      "id": 6
-    },
-    {
       "name": "Sahni sweets",
       "email": "sahni@test.com",
       "address": "Patiala",
       "rating": "4.7",
       "id": 7
+    },
+    {
+      "name": "Harman sweets",
+      "email": "harman@test.com",
+      "address": "Kalyan",
+      "rating": "4.0",
+      "id": 8
+    },
+    {
+      "name": "KFC",
+      "email": "kfc@test.com",
+      "address": "Patiala",
+      "rating": "4.8",
+      "id": 9
+    },
+    {
+      "name": "Taj Hotel",
+      "email": "taj@test.com",
+      "address": "Mumbai",
+      "rating": "5.0",
+      "id": 10
     }
   ]
 }

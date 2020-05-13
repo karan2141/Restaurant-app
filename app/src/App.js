@@ -21,11 +21,11 @@ class App extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link href="/"><FontAwesomeIcon icon={faHome}/>Home</Nav.Link>
-                <Nav.Link href="/list"><FontAwesomeIcon icon={faList}/>List</Nav.Link>
-                <Nav.Link href="/create"><FontAwesomeIcon icon={faPlus}/>Create</Nav.Link>
-                <Nav.Link href="/search"><FontAwesomeIcon icon={faSearch}/>Search</Nav.Link>
-                <Nav.Link href="/details"><FontAwesomeIcon icon={faInfo}/>Details</Nav.Link>
+                <Nav.Link href="/"><FontAwesomeIcon icon={faHome}/> Home</Nav.Link>
+                <Nav.Link href="/list"><FontAwesomeIcon icon={faList}/> List</Nav.Link>
+                <Nav.Link href="/create"><FontAwesomeIcon icon={faPlus}/> Create</Nav.Link>
+                <Nav.Link href="/search"><FontAwesomeIcon icon={faSearch}/> Search</Nav.Link>
+                <Nav.Link href="/details"><FontAwesomeIcon icon={faInfo}/> Details</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
