@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+import { Table, Alert } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons'
+
 
 export default class RestaurantList extends Component {
   constructor() {
@@ -9,12 +14,24 @@ export default class RestaurantList extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3001/restaurant").then(response => {
+    this.getData();
+  }
+  getData() {
+    fetch("http://localhost:3003/restaurant").then(response => {
       response.json().then(result => {
-        console.warn(result);
         this.setState({ list: result });
       });
     });
+  }
+  delete(id) {
+    fetch("http://localhost:3003/restaurant/"+id,{
+            method:"DELETE",
+        }).then((result)=>{
+            result.json().then((resp)=>{
+                alert("Restaurant has been Deleted");
+                this.getData();
+            })
+        })
   }
 
   render() {
@@ -24,14 +41,31 @@ export default class RestaurantList extends Component {
         <h1>Restaurant List</h1>
         {this.state.list ? (
           <div>
-            {this.state.list.map((item, i) => (
-              <div className="list-wrapper">
-                <span>{item.name}</span>
-                <span>{item.email}</span>
-                <span>{item.rating}</span>
-                <span>{item.address}</span>
-              </div>
-            ))}
+            <Table striped bordered hover>
+              <thead>
+                <tr>
+                  <th>S.no.</th>
+                  <th>Name</th>
+                  <th>Rating</th>
+                  <th>Location</th>
+                  <th>Email</th>
+                  <th>Operation</th>
+                </tr>
+              </thead>
+              <tbody>
+                {this.state.list.map((item, i) => (
+                  <tr>
+                    <td>{item.id}</td>
+                    <td>{item.name}</td>
+                    <td>{item.rating}</td>
+                    <td>{item.address}</td>
+                    <td>{item.email}</td>
+                    <td><Link to={"/update/"+item.id}><FontAwesomeIcon icon={faEdit} color="green" /> </Link>
+                    <span onClick={()=>this.delete(item.id)}><FontAwesomeIcon icon={faTrash} color="red" /> </span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
           </div>
         ) : (
           <p>Please Wait...</p>

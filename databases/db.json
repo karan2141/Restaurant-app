@@ -4,29 +4,36 @@
       "id": 1,
       "name": "KFC",
       "address": "Patiala",
-      "rating":"4.7",
-      "email":"kfc@test.com"
+      "rating": "4.7",
+      "email": "kfc@test.com"
     },
     {
-      "id": 2,
       "name": "McDonald",
       "address": "Patiala",
-      "rating":"4.5",
-      "email":"Mcd@test.com"
+      "rating": "4.5",
+      "email": "Mcd@test.com",
+      "id": 2
     },
     {
-      "id": 3,
       "name": "Taj Hotel",
       "address": "Nabha",
-      "rating":"4.0",
-      "email":"taj@test.com"
+      "rating": "4.0",
+      "email": "taj@test.com",
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "Jaggi Sweetes",
+      "name": "Harman Sweets",
+      "email": "harman@test.com",
+      "address": "kalyan",
+      "rating": "3.0",
+      "id": 6
+    },
+    {
+      "name": "Sahni sweets",
+      "email": "sahni@test.com",
       "address": "Patiala",
-      "rating":"4.3",
-      "email":"jaggi@test.com"
+      "rating": "4.7",
+      "id": 7
     }
   ]
 }
