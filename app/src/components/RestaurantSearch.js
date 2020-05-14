@@ -3,6 +3,7 @@ import { Table, Container, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
+import NavBarMenu from "./NavBarMenu";
 
 export default class RestaurantSearch extends Component {
   constructor() {
@@ -40,6 +41,7 @@ export default class RestaurantSearch extends Component {
   render() {
     return (
       <div>
+      <NavBarMenu />
         <h2>Restaurant Search</h2>
         <Container>
           <Form.Control

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import NavBarMenu from "./NavBarMenu";
 
 export default class RestaurantUpdate extends Component {
     constructor()
@@ -42,6 +43,7 @@ export default class RestaurantUpdate extends Component {
         console.log(this.props.match.params.id)
         return (
             <div>
+            <NavBarMenu />
                 <h2>Restaurant Update</h2>
                 <div>
                     <input onChange={(event)=>{this.setState({name:event.target.value})}} placeholder="Restaurant Name" value={this.state.name}/><br/><br/>

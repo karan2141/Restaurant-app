@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form } from "react-bootstrap";
+import NavBarMenu from "./NavBarMenu";
 
 export default class Login extends Component {
   constructor() {
@@ -13,9 +14,10 @@ export default class Login extends Component {
     fetch("http://localhost:3003/login?q=" + this.state.name).then(data => {
       data.json().then(result => {
         if (result.length > 0) {
-            console.log(this.props.history.push("list"))
+          localStorage.setItem("login", JSON.stringify(result))
+          console.log(this.props.history.push("list"));
         } else {
-            alert("Please check username and password")
+          alert("Please check username and password");
         }
       });
     });
@@ -23,6 +25,7 @@ export default class Login extends Component {
   render() {
     return (
       <div>
+      <NavBarMenu />
         <h2>Login Page</h2>
         <div className="login-form">
           <Form.Control

@@ -3,6 +3,7 @@ import { Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons'
+import NavBarMenu from "./NavBarMenu";
 
 
 export default class RestaurantList extends Component {
@@ -38,6 +39,7 @@ export default class RestaurantList extends Component {
     console.log(this.state);
     return (
       <div>
+      <NavBarMenu />
         <h2>Restaurant List</h2>
         {this.state.list ? (
           <div>

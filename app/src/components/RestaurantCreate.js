@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form } from "react-bootstrap";
+import NavBarMenu from "./NavBarMenu";
 
 export default class RestaurantCreate extends Component {
     constructor()
@@ -29,6 +30,7 @@ export default class RestaurantCreate extends Component {
 render() {
     return (
       <div>
+      <NavBarMenu />
         <h2>Restaurant Create</h2>
             <div className="login-form">
                 <Form.Control onChange={(event)=>{this.setState({name:event.target.value})}} placeholder="Restaurant Name"/><br/>
