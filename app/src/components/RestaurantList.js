@@ -38,7 +38,7 @@ export default class RestaurantList extends Component {
     console.log(this.state);
     return (
       <div>
-        <h1>Restaurant List</h1>
+        <h2>Restaurant List</h2>
         {this.state.list ? (
           <div>
             <Table striped bordered hover>

@@ -7,9 +7,10 @@ import RestaurantDetail from "./components/RestaurantDetail";
 import RestaurantList from "./components/RestaurantList";
 import RestaurantSearch from "./components/RestaurantSearch";
 import RestaurantUpdate from "./components/RestaurantUpdate";
+import Login from "./components/Login";
 import {Nav,Navbar} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faList, faHome, faSearch, faPlus, faInfo } from '@fortawesome/free-solid-svg-icons'
+import { faList, faHome, faSearch, faPlus, faInfo, faUser } from '@fortawesome/free-solid-svg-icons'
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
                 <Nav.Link href="/create"><FontAwesomeIcon icon={faPlus}/> Create</Nav.Link>
                 <Nav.Link href="/search"><FontAwesomeIcon icon={faSearch}/> Search</Nav.Link>
                 <Nav.Link href="/details"><FontAwesomeIcon icon={faInfo}/> Details</Nav.Link>
+                <Nav.Link href="/login"><FontAwesomeIcon icon={faUser}/> Login</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -42,6 +44,8 @@ class App extends Component {
             <RestaurantDetail />
           </Route>
           <Route path="/update/:id" render={props=>(<RestaurantUpdate {...props} />)}>
+          </Route>
+          <Route path="/login" render={props=>(<Login {...props} />)}>
           </Route>
           <Route exact path="/">
             <Home />

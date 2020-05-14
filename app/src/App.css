@@ -18,6 +18,11 @@
   font-size: large;
 }
 
+.login-form {
+  max-width: 300px;
+  margin: auto;
+}
+
 .search-list {
   max-width: 200px;
   margin: auto;
@@ -27,6 +32,10 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -4,7 +4,7 @@ export default class RestaurantDetail extends Component {
     render() {
         return (
             <div>
-                <h1>Restaurant Detail</h1>
+                <h2>Restaurant Detail</h2>
             </div>
         )
     }

@@ -40,7 +40,7 @@ export default class RestaurantSearch extends Component {
   render() {
     return (
       <div>
-        <h1>Restaurant Search</h1>
+        <h2>Restaurant Search</h2>
         <Container>
           <Form.Control
             type="text"

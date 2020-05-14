@@ -42,7 +42,7 @@ export default class RestaurantUpdate extends Component {
         console.log(this.props.match.params.id)
         return (
             <div>
-                <h1>Restaurant Update</h1>
+                <h2>Restaurant Update</h2>
                 <div>
                     <input onChange={(event)=>{this.setState({name:event.target.value})}} placeholder="Restaurant Name" value={this.state.name}/><br/><br/>
                     <input onChange={(event)=>{this.setState({email:event.target.value})}} placeholder="Restaurant Email" value={this.state.email}/><br/><br/>

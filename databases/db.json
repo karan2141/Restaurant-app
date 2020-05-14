@@ -1,4 +1,10 @@
 {
+  "login": [
+    {
+      "name": "karan",
+      "password": "abc@321"
+    }
+  ],
   "restaurant": [
     {
       "name": "McDonald",
@@ -41,6 +47,13 @@
       "address": "Mumbai",
       "rating": "5.0",
       "id": 10
+    },
+    {
+      "name": "new dhaba",
+      "email": "dhaba@test.com",
+      "address": "Kalyan",
+      "rating": "3.5",
+      "id": 11
     }
   ]
 }
